@@ -1,4 +1,19 @@
-## Jenkins - Monitoring metrics
+## Jenkins - Monitoring Metrics
+
+
+<img width="200" height="174" alt="download" src="https://github.com/user-attachments/assets/edbf83f3-ad24-4621-967d-4bd7fab0d1f3" />
+
+---
+
+## Author Information
+| Last Updated On | Version | Author           | Level           | Reviewer               |
+|-----------------|---------|------------------|-----------------|------------------------|
+| 15-08-2025      | V1.0    | Kawalpreet Kour  | Internal Review | Pritam                 |
+|                 |         | Kawalpreet Kour  | L0              | Shreya/Sharvari        |
+|                 |         | Kawalpreet Kour  | L1              | Abhishek V             |
+|                 |         | Kawalpreet Kour  | L2              | Abhishek Dubey/Rishabh sharma |
+
+---
 
 <details>
   <summary><h2><strong>Table of Contents</strong></h2></summary>
@@ -7,6 +22,7 @@
 - [What is Jenkins Monitoring?](#what-is-jenkins-monitoring)
 - [Why Monitor Jenkins?](#why-monitor-jenkins)
 - [Workflow Diagram](#workflow-diagram)
+- [Different Types of Metrics](#different-types-of-metrics)
 - [Advantages of Jenkins Monitoring](#advantages-of-jenkins-monitoring)
 - [Best Practices](#best-practices)
 - [Conclusion](#conclusion)
@@ -53,6 +69,25 @@ D --> E[Build Result]
 E --> F[Monitoring & Metrics Collection]
 F --> G[Alerting / Dashboard]
 ```
+
+---
+
+## Different Types of Metrics
+
+
+| Metric Category  | Metric              | Description                             | Example Threshold / Alert         |
+| ---------------- | ------------------ | ---------------------------------------  | --------------------------------- |
+| Build Metrics    | Build Success Rate  | % of successful builds vs failed builds | Alert if < 95%                    |
+| Build Metrics    | Build Duration      | Time taken for each job or pipeline     | Alert if > 30% longer than average |
+| Queue Metrics    | Queue Size          | Number of jobs waiting in queue         | Alert if > 5 jobs                 |
+| Queue Metrics    | Blocked Jobs        | Jobs waiting on unavailable resources   | Alert if > 2 jobs blocked         |
+| System Metrics   | CPU Usage           | CPU load on Jenkins master              | Alert if > 80%                    |
+| System Metrics   | Memory Usage        | JVM heap & non-heap memory              | Alert if > 75%                    |
+| Executor Metrics | Busy Executors      | Number of active executors              | Alert if all busy > 5 min         |
+| Plugin Metrics   | Failed Plugins      | Plugins that failed to start            | Alert if > 0                      |
+| Plugin Metrics   | Upgradeable Plugins | Plugins with available updates          | Alert if > 0                      |
+
+> **Note:** Metrics can be monitored using tools like **Prometheus + Grafana** (via `/prometheus/` endpoint), Jenkins plugins, or dashboards like **JavaMelody** for JVM/system metrics.
 
 ---
 ## Advantages of Jenkins Monitoring
@@ -110,5 +145,5 @@ Monitoring Jenkins ensures stable CI/CD pipelines, efficient resource usage, and
 | Jenkins Official Documentation | https://www.jenkins.io/doc/                 |
 | Prometheus Documentation       | https://prometheus.io/docs/                 |
 | Grafana Documentation          | https://grafana.com/docs/                   |
-```
+
 
