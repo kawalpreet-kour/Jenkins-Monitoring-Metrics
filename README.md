@@ -1,4 +1,4 @@
-## Jenkins - Monitoring Metrics
+# Jenkins - Monitoring Metrics
 
 
 <img width="200" height="174" alt="download" src="https://github.com/user-attachments/assets/edbf83f3-ad24-4621-967d-4bd7fab0d1f3" />
@@ -6,6 +6,7 @@
 ---
 
 ## Author Information
+
 | Last Updated On | Version | Author           | Level           | Reviewer               |
 |-----------------|---------|------------------|-----------------|------------------------|
 | 15-08-2025      | V1.0    | Kawalpreet Kour  | Internal Review | Pritam                 |
@@ -23,7 +24,7 @@
 - [Why Monitor Jenkins?](#why-monitor-jenkins)
 - [Workflow Diagram](#workflow-diagram)
 - [Different Types of Metrics](#different-types-of-metrics)
-- [Advantages of Jenkins Monitoring](#advantages-of-jenkins-monitoring)
+- [Advantages ](#advantages)
 - [Best Practices](#best-practices)
 - [Conclusion](#conclusion)
 - [FAQs](#faqs)
@@ -90,7 +91,7 @@ F --> G[Alerting / Dashboard]
 > **Note:** Metrics can be monitored using tools like **Prometheus + Grafana** (via `/prometheus/` endpoint), Jenkins plugins, or dashboards like **JavaMelody** for JVM/system metrics.
 
 ---
-## Advantages of Jenkins Monitoring
+## Advantages
 
 | Reason | Explanation |
 |--------|-------------|
